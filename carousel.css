@@ -1,3 +1,8 @@
+img {
+  position: absolute;
+  clip: rect(0px, 1000px,400px, 0px);
+}
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
