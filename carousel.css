@@ -2,14 +2,14 @@
     max-width: 1000px;
     position: relative;
     margin: auto;
-   clip:rect(0px,60px,200px,0px);
+   
 }
 
 .mySlides {
     display: none;
   height: 400px;
   border: solid 1px black;
-  clip:rect(0px,60px,200px,0px);
+  
      
 }
 
