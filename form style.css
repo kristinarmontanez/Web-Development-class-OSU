@@ -30,7 +30,7 @@ input[type=submit]:hover {
 .container {
   border-radius: 5px;
   background-color: #e3dac9;
-  background-image: linear-gradient(to bottom right, #e3dac9, #b2beb5);
+  background-image: linear-gradient(to bottom right, #e3dac9, #6e7f80);
   padding: 20px;
   float: right;
   margin-right: 10%
