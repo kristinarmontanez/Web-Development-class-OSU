@@ -46,8 +46,10 @@ body {
 
 
 .center_shadow {
-  margin: 25px 10px;
+  margin: 25px 25px;
   text-align:center; 
+  margin-left: 20%;
+  margin-right: 20%; 
   background: #141414;
   box-shadow: 0 0 15px 10px #141414;
 }
