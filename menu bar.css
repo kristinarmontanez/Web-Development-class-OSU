@@ -11,6 +11,7 @@ body {
   overflow: hidden;
   background-color: #333;
   background-image: linear-gradient(to right, #004953, #333);
+  background-size: cover;
 }
 
 .topnav a {
