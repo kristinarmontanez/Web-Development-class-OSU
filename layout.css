@@ -44,12 +44,10 @@ body {
 }
 
 
-.center_shadow {
+iframe {
   
   text-align:center; 
   display: block;
-  width=87%;
-  height=48%;
   margin: auto;
   background: #141414;
   box-shadow: 0 0 15px 10px #141414;
