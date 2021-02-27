@@ -57,15 +57,21 @@
 <p>More hiking info: </p> <span id="result2"></span><br>
     
     <script>
-   document.getElementById("btn2").addEventListener("click", function(){
-	var req = new XMLHttpRequest();
-	req.open('GET', 'https://www.benbrougher.tech/hiker/v1/trails/', false);
-	req.send(JSON.stringify());
-	var response = JSON.parse(req.responseText);
-	var temperature = document.createTextNode(response.main);
-	display(temperature);
-   }});
-        
+	    
+	    
+	    
+  var request = require('request');
+var options = {
+  'method': 'GET',
+  'url': 'https://www.benbrougher.tech/hiker/v1/trails/',
+  'headers': {
+    'Content-Type': 'application/json'
+  }
+};
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
+});
     </script>
     
     
