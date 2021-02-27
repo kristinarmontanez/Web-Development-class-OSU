@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #b2beb5;
+  background-color: #b2beb5; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #b2beb5, #004953);
   
 }
 
