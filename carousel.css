@@ -56,7 +56,8 @@ img {
     bottom: 0;
     width: 100%;
     text-align: center;
-    background-color: #222428
+    background-color: #222428;
+    opacity 0.2
 }
 
 .numbertext {
