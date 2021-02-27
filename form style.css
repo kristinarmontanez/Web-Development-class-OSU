@@ -28,7 +28,7 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
-  opacity: 0.5;
+  background-color: #e3dac9;
+  background-image: linear-gradient(to bottom right, #e3dac9, #b2beb5);
   padding: 20px;
 }
