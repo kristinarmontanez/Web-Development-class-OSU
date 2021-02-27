@@ -45,6 +45,14 @@ body {
 }
 
 
+.center_shadow {
+  margin: 25px 10px;
+  text-align:center; 
+  background: #141414;
+  box-shadow: 0 0 15px 10px #141414;
+}
+
+
 .button {
   border: none;
   color: white;
