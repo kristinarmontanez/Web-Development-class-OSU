@@ -13,8 +13,9 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #004953;
   color: white;
+  opacity: 0;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
