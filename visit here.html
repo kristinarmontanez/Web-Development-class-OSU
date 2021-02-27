@@ -62,16 +62,16 @@
 	    
   var request = require('request');
 var options = {
-  'method': 'GET',
-  'url': 'https://www.benbrougher.tech/hiker/v1/trails/',
-  'headers': {
-    'Content-Type': 'application/json'
-  }
-};
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
-});
+  		'method': 'GET',
+  		'url': 'https://www.benbrougher.tech/hiker/v1/trails/',
+  		'headers': {'Content-Type': 'application/json'}
+		};
+request(options, function (error, response) 
+	{
+  	if (error) throw new Error(error);
+  	console.log(response.body);
+	}
+       );
     </script>
     
     
