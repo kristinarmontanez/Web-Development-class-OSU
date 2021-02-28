@@ -135,6 +135,24 @@
         
 /*--------------------------STYLE SHEET FOR GENERAL BODY LAYOUT---------------------------*/
         
+	a:link {
+	  color: white;
+	  background-color: transparent;
+	  text-decoration: none;
+	}
+
+	a:visited {
+	  color: #e3dac9;
+	  background-color: transparent;
+	  text-decoration: none;
+	}
+
+	a:hover {
+	  color: #e9d66b;
+	  background-color: transparent;
+	  text-decoration: underline;
+	}        
+
         .container {
           margin: 0;
           font-family: Arial, Helvetica, sans-serif;
