@@ -6,49 +6,10 @@
 
 //-----------------All text for the Index page (main page):-------------------
 
-// Text for the Carousel Section.
-
-//Text for the header.
-document.getElementById("I1").innerHTML = "Explore the Northwest"
-
-
-//Text for the explanation placed in the slides.
-document.getElementById("I2A").innerHTML = "Classic view of Dome Peak"
-document.getElementById("I2B").innerHTML = "Autumn foliage in the North Cascades\
-                                            overlooking the Canadian border."
-document.getElementById("I2C").innerHTML = "Stormy Cascades"
-document.getElementById("I2D").innerHTML = "Gifford Pinchot, Washington"
-
-
-//Text for the citation for original website of slides.
-document.getElementById("I2cite").innerHTML = "Original author of images above:\
-                                             https://www.artinnaturephotography.com"
-
-
-//Text for Header below the Carousel.
-document.getElementById("I3A").innerHTML = "There are so many hiking trails and\
-                                          waterfalls to visit in Washington, Idaho,\
-                                          and Oregon. Please take a look at a few \
-                                          you may know of and some that deserve greater\
-                                          notoriety!"
-
-
-//Text for the Content Section.
-document.getElementById("I4A").innerHTML = "Western Washington"
-document.getElementById("I4B").innerHTML = "Beautiful during every season."
-document.getElementById("I4C").innerHTML = "Visit when you can!.</span> Late afternoon\
-                                           sunlight highlights the sparkling fresh mountain\
-                                           water in this backcountry waterfall in \
-                                           Washington's Alpine Lakes Wilderness in \
-                                           the Cascade mountains."
-document.getElementById("I4D").innerHTML = "Cascades, Washington"
-
-
-
 
 
 //---------------------------All text for the About page: -----------------------
-//Text for the Content Section.
+
 
 
 
