@@ -225,11 +225,11 @@
           background-color: #004953;
           }
 
-        img {
+       .content_image {
         font-family: Arial, Helvetica, sans-serif;
         display: block;
         border-style: solid;
-        border-color: pink;
+        border-color: yellow;
         height: auto;
         max-width: 100%;
         box-sizing:border-box;
