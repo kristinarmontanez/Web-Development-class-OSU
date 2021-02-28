@@ -27,7 +27,7 @@ input[type=submit]:hover {
   color: black;
 }
 
-.container {
+.form_container {
   border-radius: 5px;
   background-color: #e3dac9;
   background-image: linear-gradient(to bottom right, #e3dac9, #6e7f80);
