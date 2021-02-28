@@ -35,7 +35,13 @@ page the user is currently on.
    
     
 <!------------------------------------Header Above Picture Carousel------------------------------------>    
-    
+
+<!--
+Place the first large header, that will welcome users to the website. Give the span, along with every other
+section needing text, a cereal ID that will be placed chronically with the text.js file. For example, "I3" 
+stands for "Index" and "3rd" text string. This allows for easier changes and finding where text goes to each 
+section. 
+--> 
 <div class="big_letters" style="text-align:center">
     <h1 id="I1"</h1>
 </div>
@@ -45,29 +51,36 @@ page the user is currently on.
     
 <!----------------------------------------Picture Carousel-------------------------------------------->
 
+<!--
+Create a container for hte slideshow.
+--> 
 <div class="slideshow-container">
 <div class="slideshow-inner">
 
 <!--
 Add each section for the carousel, and position each image, keeping with the same class.
 --> 
-    <div class="mySlides fade">
-        <img src="white-rock-lakes-dome-peak-20180725_0386_focused.jpg" class='slideImage' style='width: 100%;' alt="Dome Peak"/>
+    <div class="mySlides">
+        <img src="white-rock-lakes-dome-peak-20180725_0386_focused.jpg"\
+             class='slideImage' style='width: 100%;' alt="Dome Peak"/>
         <p><span class="text"id="I2A"></p>
     </div>
 
-    <div class="mySlides fade">
-        <img src='north-cascades-fall-autumn-color-mist-20120929_0271.jpg' class='slideImage' style='width: 100%;' alt="North Cascades"/>
+    <div class="mySlides">
+        <img src='north-cascades-fall-autumn-color-mist-20120929_0271.jpg'\
+             class='slideImage' style='width: 100%;' alt="North Cascades"/>
         <div class="text">Autumn foliage in the North Cascades overlooking the Canadian border. </div>
     </div>
 
-    <div class="mySlides fade">
-        <img src='stormy-autumn-larches-cascades-20180930_0573.jpg' class='slideImage' style='width: 100%;' alt="Autumn Cascades"/>
+    <div class="mySlides">
+        <img src='stormy-autumn-larches-cascades-20180930_0573.jpg'\
+             class='slideImage' style='width: 100%;' alt="Autumn Cascades"/>
         <div class="text">Stormy Cascades</div>
     </div>
 
-    <div class="mySlides fade">
-        <img src='waterfall-sun-refreshing-washington-20130505_0657.jpg' class='slideImage' style='width: 100%;' alt="Western Washington"/>
+    <div class="mySlides">
+        <img src='waterfall-sun-refreshing-washington-20130505_0657.jpg'\
+             class='slideImage' style='width: 100%;' alt="Western Washington"/>
         <div class="text">Gifford Pinchot, Washington</div>
     </div>
 
@@ -129,8 +142,8 @@ Citation to all pictures used in the picture carousel.
 
     
 <!--
-This footer includes the copyright and "fair use" disclaimer, as my material uses multiple images and video that is not 
-mine. Authors/origins are cited throughout the pages as needed. 
+This footer includes the copyright and "fair use" disclaimer, as my material uses multiple images 
+and video that is not mine. Authors/origins are cited throughout the pages as needed. 
 -->
 <div class="centerstuff">
     <p><span id="F1" style="font-size:15px;"></p>
@@ -143,8 +156,8 @@ mine. Authors/origins are cited throughout the pages as needed.
     
 <!--
 Javascript files for the carousel and all text in the body of the pages. 
-Each section in javascript is coded to match it's section. For example, "I3" stands for "Index" and "3rd" text string. 
-This allows for easier changes and finding where text goes to each section. 
+Each section in javascript is coded to match it's section. For example, "I3" stands for "Index" and 
+"3rd" text string. This allows for easier changes and finding where text goes to each section. 
 -->
 <p>
     <script src="carousel.js" type="application/javascript"></script>
