@@ -31,7 +31,6 @@ document.getElementById("I3A").innerHTML = "There are so many hiking trails and\
                                           and Oregon. Please take a look at a few \
                                           you may know of and some that deserve greater\
                                           notoriety!"
-document.getElementById("I3B").innerHTML = "'Visit Here' page for more information."
 
 
 //Text for the Content Section.
