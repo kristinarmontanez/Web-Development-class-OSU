@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  MAIN PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kristina's Website</title>
@@ -9,13 +10,21 @@
     soon realized that some styles were messing with other sections I did not intend to reach. 
     So I rolled all the css into one file.
     -->
-    <link rel="stylesheet" type="text/css" href="https://kristinarmontanez.github.io/final-project/carousel.css">
-    <link rel="stylesheet" type="text/css" href="https://kristinarmontanez.github.io/final-project/menu bar.css">
     <link rel="stylesheet" type="text/css" href="https://kristinarmontanez.github.io/final-project/layout.css">
 </head>
 
 <body>
     
+    
+    
+<!------------------------------------------Horizontal Menu------------------------------------------->
+    
+
+<!--
+Create a section for each top horizontal menu link that will take the user to each page.
+Make sure that each "active" link is set aside to allow for differing CSS style/indication of which
+page the user is currently on.
+-->   
 <div class="topnav">
   <a href="Contact page.html">Contact</a>
   <a href="visit here.html">Visit Here</a>
@@ -23,40 +32,59 @@
   <a class="active" href="index.html">Home</a>
 </div>
 
+   
+    
+<!------------------------------------Header Above Picture Carousel------------------------------------>    
+    
 <div class="big_letters" style="text-align:center">
-<h1>Explore the Northwest</h1>
+    <h1 id="I1"</h1>
+</div>
   
     
+    
+    
+<!----------------------------------------Picture Carousel-------------------------------------------->
+
 <div class="slideshow-container">
 <div class="slideshow-inner">
 
+<!--
+Add each section for the carousel, and position each image, keeping with the same class.
+--> 
+    <div class="mySlides">
+        <img src="white-rock-lakes-dome-peak-20180725_0386_focused.jpg" class='slideImage' style='width: 100%;' alt="Dome Peak"/>
+        <p><span class="text"id="I2A"></p>
+    </div>
+
+    <div class="mySlides">
+        <img src='north-cascades-fall-autumn-color-mist-20120929_0271.jpg' class='slideImage' style='width: 100%;' alt="North Cascades"/>
+        <div class="text">Autumn foliage in the North Cascades overlooking the Canadian border. </div>
+    </div>
+
+    <div class="mySlides">
+        <img src='stormy-autumn-larches-cascades-20180930_0573.jpg' class='slideImage' style='width: 100%;' alt="Autumn Cascades"/>
+        <div class="text">Stormy Cascades</div>
+    </div>
+
+    <div class="mySlides">
+        <img src='waterfall-sun-refreshing-washington-20130505_0657.jpg' class='slideImage' style='width: 100%;' alt="Western Washington"/>
+        <div class="text">Gifford Pinchot, Washington</div>
+    </div>
     
-<div class="mySlides">
-    <img  src="white-rock-lakes-dome-peak-20180725_0386_focused.jpg" class='slideImage' style='width: 100%;' alt="Dome Peak"/>
-    <div class="text">Classic view of Dome Peak</div>
+</div>
 </div>
 
-    <div class="mySlides fade">
-    <img  src='north-cascades-fall-autumn-color-mist-20120929_0271.jpg' class='slideImage' style='width: 100%;' alt="North Cascades"/>
-    <div class="text">Autumn foliage in the North Cascades overlooking the Canadian border. </div>
-</div>
-    
-    <div class="mySlides fade">
-    <img  src='stormy-autumn-larches-cascades-20180930_0573.jpg' class='slideImage' style='width: 100%;' alt="Autumn Cascades"/>
-    <div class="text">Stormy Cascades</div>
-</div>
-    
-<div class="mySlides fade">
-    <img  src='waterfall-sun-refreshing-washington-20130505_0657.jpg' class='slideImage' style='width: 100%;' alt="Western Washington"/>
-    <div class="text">Gifford Pinchot, Washington</div>
-</div>
-  
+<!--
+Add the side forward and backward buttons, used thick arrow html code.
+-->    
 </div>
   <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
   <a class="next" onclick='plusSlides(1)'>&#10095;</a>
 </div>
-<br/>
-
+    
+<!--
+Add the dots at the bottom of the picture carousel, and connect them to each picture/slide.
+-->
 
 <div style='text-align: center;'>
     <span class="dot" onclick='currentSlide(1)'></span>
@@ -65,20 +93,27 @@
     <span class="dot" onclick='currentSlide(4)'></span>
 </div>
     
+<!--
+Citation to all pictures used in the picture carousel. 
+-->
+<h5> Original author of images above: https://www.artinnaturephotography.com/ </h5>
+
+
+
     
-    <h5> Original author of images above: https://www.artinnaturephotography.com/ </h5>
-
-</div>
-
     
-
+    
+    
+<!--------------------------------------Header under the Carousel------------------------------------>
 
 <div class="centerstuff">
   <h2>There are so many hiking trails and waterfalls to visit in Washington, Idaho, and Oregon. Please take a look at a few you may know of and some that deserve greater notoriety!</h2>
   <p>Please check out the "Visit Here" page for more information.</p>
 </div>
 
-<!-- The App Section -->
+    
+    
+<!--------------------------------------The Content Section----------------------------------------->
 <div class="container">
   <div class="row">
     <div class="column-66">
@@ -94,17 +129,29 @@
 </div>
 
     
-    
-    <div class="centerstuff">
+<!--
+This footer includes the copyright and "fair use" disclaimer, as my material uses multiple images and video that is not 
+mine. Authors/origins are cited throughout the pages as needed. 
+-->
+<div class="centerstuff">
     <p><span id="F1" style="font-size:15px;"></p>
     <p><span id="F2" style="font-size:10px;"></p>
-    </div>
-<p>
-<script src="carousel.js" type="application/javascript"></script>
-<script src="text.js" type="application/javascript"></script>
-</p>
+</div>
+
 
     
-   
+<!-----------------------------------------JAVASCRIPT------------------------------------------->
+    
+<!--
+Javascript files for the carousel and all text in the body of the pages. 
+Each section in javascript is coded to match it's section. For example, "I3" stands for "Index" and "3rd" text string. 
+This allows for easier changes and finding where text goes to each section. 
+-->
+<p>
+    <script src="carousel.js" type="application/javascript"></script>
+    <script src="text.js" type="application/javascript"></script>
+</p>
+
+       
 </body>
 </html>
