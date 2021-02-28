@@ -207,6 +207,12 @@
           cursor: pointer;
           background-color: #004953;
           border-radius: 10px;
+	  box-sizing: border-box;
+          background-image: linear-gradient(-180deg, #004953 0%, #004953 100%);
+	  box-shadow: 0 1rem 1.25rem 0 rgba(22,50,50,0.50),
+							0 -0.25rem 1.5rem rgba(16, 40, 33, 1) inset,
+							0 0.75rem 0.5rem rgba(106, 140, 133, 1) inset,
+							0 0.25rem rgba(6, 40, 33, 1) inset;
           }
 
         .button:hover {
@@ -228,6 +234,12 @@
           cursor: pointer;
           background-color: #004953;
           border-radius: 10px;
+	  box-sizing: border-box;
+          background-image: linear-gradient(-180deg, #004953 0%, #004953 100%);
+	  box-shadow: 0 1rem 1.25rem 0 rgba(22,50,50,0.50),
+							0 -0.25rem 1.5rem rgba(16, 40, 33, 1) inset,
+							0 0.75rem 0.5rem rgba(106, 140, 133, 1) inset,
+							0 0.25rem rgba(6, 40, 33, 1) inset;
           }
 
        .content_image {
@@ -281,7 +293,7 @@
         cursor: pointer;
         box-sizing: border-box;
         background-image: linear-gradient(-180deg, #004953 0%, #004953 100%);
-	 box-shadow: 0 1rem 1.25rem 0 rgba(22,50,50,0.50),
+	box-shadow: 0 1rem 1.25rem 0 rgba(22,50,50,0.50),
 							0 -0.25rem 1.5rem rgba(16, 40, 33, 1) inset,
 							0 0.75rem 0.5rem rgba(106, 140, 133, 1) inset,
 							0 0.25rem rgba(6, 40, 33, 1) inset;
