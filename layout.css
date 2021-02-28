@@ -117,6 +117,8 @@
         img {
           font-family: Arial, Helvetica, sans-serif;
           display: block;
+                border-style: solid;
+          border-color: pink;
           height: auto;
           max-width: 100%;
           box-sizing:border-box;
@@ -134,6 +136,8 @@
           img {
             margin: auto;
             box-sizing:border-box;
+                  border-style: solid;
+            border-color: purple;
           }
         }
 
