@@ -4,7 +4,10 @@
 
 //-----------------All text for the Index page (main page):--------------------
 
-document.getElementById("I1").innerHTML = "Disclaimer & Fair Use Statement"
+document.getElementById("I1").innerHTML = "Explore the Northwest"
+
+document.getElementById("I2A").innerHTML = "Classic view of Dome Peak"
+
 
 
 
