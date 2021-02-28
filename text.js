@@ -2,6 +2,8 @@
 //----------------------------------------------------------------------------
 
 
+
+
 //-----------------All text for the Index page (main page):-------------------
 
 // Text for the Carousel Section.
@@ -43,7 +45,12 @@ document.getElementById("I4C").innerHTML = "Visit when you can!.</span> Late aft
 document.getElementById("I4D").innerHTML = "Cascades, Washington"
 
 
+
+
+
 //---------------------------All text for the About page: -----------------------
+//Text for the Content Section.
+
 
 
 //---------------------------All text for the Visit page: -----------------------
