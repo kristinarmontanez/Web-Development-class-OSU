@@ -51,7 +51,7 @@
         }
 
         .mySlides {
-        display: none;
+        display: block;
         height: 400px;
         background: #141414;
         box-shadow: 0 0 15px 10px #141414;
