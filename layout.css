@@ -368,7 +368,7 @@ background-image: linear-gradient(-180deg, #c3b091 0%, #c3b091 100%);
     position: relative;
     border: 1px solid gray;
     overflow: hidden;
-    height: 400px;
+    height: 100px;
 }
 
 .scrollable.showScroll::after {
@@ -376,14 +376,14 @@ background-image: linear-gradient(-180deg, #c3b091 0%, #c3b091 100%);
     content: '';
     top: 5%;
     right: 7px;
-    height: 90%;
-    width: 3px;
+    height: 100px;
+    width: 100px;
     background: rgba(224, 224, 255, .3);
 }
 
 .scrollable .content-wrapper {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
     padding-right: 50%;
     overflow-y: scroll;
 }
