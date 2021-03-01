@@ -82,6 +82,8 @@
         margin-top: -22px;
         padding: 16px;
         color: #222428;
+	border-bottom: black;
+	background-image: linear-gradient(to left, #222428, #939599,#222428, #222428, black);
         font-weight: bold;
         font-size: 30px;
         transition: .6s ease;
