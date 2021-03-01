@@ -130,7 +130,7 @@
         height: 15px;
         width: 15px;
         margin: 0 2px;
-	border-right: 1px solid grey;
+	border-right: 1px solid #5e5a4e;
         background-color: #717171;
 	background-image: linear-gradient(to bottom, #717171, #c3b091,#717171, #717171, black);
         border-radius: 50%;
