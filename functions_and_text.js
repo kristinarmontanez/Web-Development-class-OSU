@@ -8,7 +8,8 @@
 
 
 
-//To be used as the footer of each page. 
+//To be used as the footer of each page. Each repeating section in javascript is coded to match it's section. For example, 
+//"F1" stands for "Footer" and "1st" text string. This allows for easier changes and finding where text goes to each section. 
 document.getElementById("F1").innerHTML = "Disclaimer & Fair Use Statement"
 
 document.getElementById("F2").innerHTML = "This website may contain copyrighted material,\
