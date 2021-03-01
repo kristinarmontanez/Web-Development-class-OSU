@@ -363,12 +363,12 @@ background-image: linear-gradient(-180deg, #c3b091 0%, #c3b091 100%);
 .scrollable {
     padding: 0% 10%;
     position: relative;
-    border: 2px solid #d3dbd7;
+    border: 2px solid grey;
     border-radius: 5px;
     overflow: hidden;
     height: 400px;
     background-color: #e3dac9;
-    box-shadow: 0px 0px 18px 3px #d3dbd7 inset
+    box-shadow: 0px 0px 18px 3px grey inset
 }
 
 .scrollable.showScroll::after {
