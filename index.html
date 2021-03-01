@@ -60,39 +60,41 @@ Create a container for the slideshow.
 
 <!--
 Add each section for the carousel, and position each image, keeping with the same class. Place text
-within each section for brief explanation of picture that will display as the picture displays.
+within each section for brief explanation of picture that will display as the picture displays. This basic 
+idea was found on the "how-to" for slideshows on W3Schools. However, it needed previous and next buttons.
+
 --> 
-    <div class="mySlides">
+    <div class="mySlides fade">
         <img src="white-rock-lakes-dome-peak-20180725_0386_focused.jpg"\
              class='slideImage' style='width: 100%;' alt="Dome Peak"/>
         <div class="text">Dome Peak. </div>
     </div>
 
-    <div class="mySlides">
+    <div class="mySlides fade">
         <img src='north-cascades-fall-autumn-color-mist-20120929_0271.jpg'\
              class='slideImage' style='width: 100%;' alt="North Cascades"/>
         <div class="text">North Cascades overlooking the Canadian border. </div>
     </div>
 
-    <div class="mySlides">
+    <div class="mySlides fade">
         <img src='stormy-autumn-larches-cascades-20180930_0573.jpg'\
              class='slideImage' style='width: 100%;' alt="Autumn Cascades"/>
          <div class="text">Stormy Cascades</div>
     </div>
 
-    <div class="mySlides">
+    <div class="mySlides fade">
         <img src='waterfall-sun-refreshing-washington-20130505_0657.jpg'\
              class='slideImage' style='width: 100%;' alt="Western Washington"/>
         <div class="text">Gifford Pinchot, Washington</div>
     </div>
 
 <!--
-Add the side forward and backward buttons, used thick arrow html code. Give them an "onclick"
+Add the side previous and next buttons, used thick arrow html icon code. Give them an "onclick"
 feature that will move the slides either 1 or -1.
 -->    
 </div>
-  <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
-  <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+  <a class="prev" onclick='plusSlides(-1)'>U+02770;</a>
+  <a class="next" onclick='plusSlides(1)'>U+02771;</a>
 </div>
 <br> 
 <!--
