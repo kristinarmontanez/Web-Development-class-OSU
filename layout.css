@@ -122,13 +122,14 @@
         width: 15px;
         margin: 0 2px;
         background-color: #717171;
+	background-image: linear-gradient(to bottom, #717171, #c3b091,#717171, #717171, black);
         border-radius: 50%;
         display: inline-block;
         transition: background-color .6s ease
         }
 
        .active, .dot:hover {
-         background-image: linear-gradient(to bottom, #c3b091, #004953);
+         background-image: linear-gradient(to bottom, #004953, #c3b091, #004953, black);
          }
 
 /* Fading animation */
