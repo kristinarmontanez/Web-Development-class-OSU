@@ -127,21 +127,27 @@
         transition: background-color .6s ease
         }
 
-
-/* IF I WANT TO USE THIS
-background-image: linear-gradient(-180deg, #c3b091 0%, #c3b091 100%);
-	box-shadow: 0 1rem 1.25rem 0 rgba(22,50,50,0.50),
-							0 -0.25rem 1.5rem rgba(16, 14, 33, 1) inset,
-							0 0.75rem 0.5rem rgba(350, 300, 245, 1) inset,
-							0 0.25rem rgba(220, 180, 170, 1) inset;*/
        .active, .dot:hover {
-         background-image: linear-gradient(-180deg, #c3b091 0%, #004953 100%);
-	box-shadow: 0 1rem 1.25rem 0 rgba(22,50,50,0.50),
-							0 -0.25rem 1.5rem rgba(16, 40, 33, 1) inset,
-							0 0.75rem 0.5rem rgba(200, 240, 233, 1) inset,
-							0 0.25rem rgba(1, 14, 16, 1) inset;
+         background-image: linear-gradient(to bottom, #c3b091, #004953);
          }
 
+/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
 
         
 /*--------------------------STYLE SHEET FOR GENERAL BODY LAYOUT---------------------------*/
