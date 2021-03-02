@@ -37,11 +37,7 @@ page the user is currently on.
 <!------------------------------------Header Above Picture Carousel------------------------------------>    
 
 <!--
-Place the first large header, that will welcome users to the website. Give the span, along with every other
-section needing text, a cereal ID that will be placed chronically with the text.js file. For example, "I3" 
-stands for "Index" and "3rd" text string. This allows for easier changes and finding where text goes to each 
-section. Several divs/headers have both a class, and an ID so that I can change the CSS styling separately 
-from the javascript text.
+Place the first large header, that will welcome users to the website. 
 --> 
 <div class="big_letters" style="text-align:center">
     <h2>Explore the Northwest</h2>
@@ -51,9 +47,11 @@ from the javascript text.
     
     
 <!----------------------------------------Picture Carousel-------------------------------------------->
-
+   
+    
 <!--
-Create a container for the slideshow.
+Here, I created a slideshow from the W3School's website. First, add the container, then the slides, 
+picture by picture.
 --> 
 <div class="slideshow-container">
 <div class="slideshow-inner">
@@ -61,7 +59,9 @@ Create a container for the slideshow.
 <!--
 Add each section for the carousel, and position each image, keeping with the same class. Place text
 within each section for brief explanation of picture that will display as the picture displays. This basic 
-idea was found on the "how-to" for slideshows on W3Schools. However, it needed previous and next buttons.
+idea was found on the "how-to" for slideshows on W3Schools. However, it needed to change pictures automatically,
+so I added the automatic feature. Each slide has the fade feature in the class for transitioning, and 
+has text on top of the picture.
 
 --> 
     <div class="mySlides fade">
@@ -90,7 +90,7 @@ idea was found on the "how-to" for slideshows on W3Schools. However, it needed p
 
 <!--
 Add the side previous and next buttons, used thick arrow html icon code. Give them an "onclick"
-feature that will move the slides either 1 or -1.
+feature that will move the slides either 1 (forward) or -1 (backward).
 -->    
 </div>
   <a class="prev" onclick='plusSlides(-1)'>&#10096;</a>
@@ -122,11 +122,16 @@ Create a header that will state general information about hiking outdoors.
   <h2>There are so many hiking trails and waterfalls to visit in Washington, Idaho, and Oregon. 
       Please take a look at a few you may already know, and some that deserve greater notoriety!</h2>
 <!--
-Citation to all pictures used in the picture carousel. For some reason it would not position correctly
-when entered from the text.js file, so it will stay in the index.html file.
+Citation to all pictures used in the picture carousel. As a side note, for some reason text will not position 
+correctly when entered from the text.js file, so all text not repeating on each page will stay in each html file.
 -->
          <p>Images above are originally by Floris van Breugel. 
          To view his full photography portfolio, visit his site 
+         <!--
+         Link the url to the author/artist of the picture/media. This will be repeated throughout the pages
+         copyright purposes. Also, create a "blank" target which will open in a new window, so that my 
+         website will still be in a window to go back to. 
+         -->
          <a href="https://www.artinnaturephotography.com/gallery/pacificnorthwest/" target="_blank">here</a></p>
 </div>
 
@@ -136,9 +141,10 @@ when entered from the text.js file, so it will stay in the index.html file.
 
 <!--
 Here we will create a section where we divide the page into columns, the CSS will place the text and the
-pictures next to each other instead of above and below. These positions will be used repeatedly throughout
-each page in order to avoide repeating code, and create continuity from page to page, this will also help 
-with troubleshooting. 
+pictures next to each other instead of above and below. This helps to create a format that can be used over
+and over again, and create continuity from page to page, this will also help with troubleshooting. The display 
+idea is from the W3School's how-to on creating a responsive display. Column-66 gives a longer display width, and 
+column-33 gives a shorter display width. 
 -->    
 <div class="container">
     <div class="row">
@@ -151,10 +157,15 @@ with troubleshooting.
                 any information or new locations off the beaten path. I (and my dogs) will greatly appreciate it!</p>
                 </div>
     <div class="column-33">
+        <!--
+        Here, create a zig-zag effect by placing the pictures in opposite margin spaces. 
+        --> 
         <img src="my photo 1.jpg" class="content_image" style="position: relative; margin-left: 100px; margin-bottom: 40px" width="213" height="300">
-        
         <img src="my photo 2.jpg" class="content_image" style="position: relative; margin-left: 0" width="213" height="300">
         <br>
+        <!--
+        Yay! I get to use my pictures! 
+        --> 
         <p style="font-size:15px;">© 2017 Kristina Montanez</p>
         </div>
         </div>
@@ -182,8 +193,8 @@ and video that is not mine. Authors/origins are cited throughout the pages as ne
 <!--
 Javascript files for the carousel, scroll box, and repeatable text in the body of the pages. 
 At first, I tried to place this at the bottom of the body, however, it would load with the pictures
-not in slideshow form. So I placed the JS file right after the carousel portion of this page. 
-...This made it worse. So here it stays.
+not in slideshow form. So I placed the JS file right after the carousel portion of this page...
+which made it worse. So here it stays.
 -->
 
 <script src="functions_and_text.js" type="application/javascript"></script>
