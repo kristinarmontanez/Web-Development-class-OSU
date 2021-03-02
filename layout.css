@@ -42,6 +42,7 @@
 	border-radius: 4px;
 	box-sizing: border-box;
         background-image: linear-gradient(-180deg, #004953 0%, #004953 100%);
+      	/*Here, I researched how to use the various insets to create a "3d button affect"*/
 	box-shadow: 0 1rem 1.25rem 0 rgba(22,50,50,0.50),
 							0 -0.25rem 1.5rem rgba(16, 40, 33, 1) inset,
 							0 0.75rem 0.5rem rgba(106, 140, 133, 1) inset,
@@ -53,6 +54,10 @@
 
 /*--------------------------STYLE SHEET FOR PICTURE CAROUSEL-----------------------------*/
 
+
+
+	/*Here, changed the sizing of both the slideshow and container so that they would 
+	not have any hangover. round out the corners a bit. */
        .slideImage {
         position: absolute;
         clip: rect(0px, 1000px,400px, 0px);
@@ -74,6 +79,8 @@
         border-radius: 10px;
         }
 
+	/* Again, make sure that the arrows are positioned correctly, and give them a 
+	gradient color to resemble a "shine". */
        .prev, .next {
         cursor: pointer;
         position: absolute;
@@ -102,10 +109,13 @@
 
        .prev:hover,.next:hover {
         color: #f2f2f2;
-        background-color: rgba(0, 0, 0, 0.8)
-	background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+        background-color: rgba(0, 0, 0, 0.8);
+	background-color: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
         }
-
+	
+	/*Here, I needed to make sure that you can see the white letters
+	through the background, and when used over the images. So I used 
+	a text shadow. */
        .text {
         color: white;
         font-size: 15px;
@@ -141,10 +151,11 @@
 
        .active, .dot:hover {
 	 border-right: 1px solid #004953;
-         background-image: linear-gradient(to bottom, #004953, #c3b091, #004953, #004953, black);
+         background-background: linear-gradient(to bottom, #004953, #c3b091, #004953, #004953, black);
          }
 
-/* Fading animation */
+	/* This part creates the fading feature on the pictures. This was shown on the W3Schools
+	website.*/
 	.fade {
 	  -webkit-animation-name: fade;
 	  -webkit-animation-duration: 1.5s;
@@ -165,6 +176,9 @@
         
 /*--------------------------STYLE SHEET FOR GENERAL BODY LAYOUT---------------------------*/
         
+
+	/*Here, I needed to manually change the "link" colors so that they can be seen over 
+	the background. */
 	a:link {
 	  color: white;
 	  background-color: transparent;
@@ -266,6 +280,8 @@
           border-radius: 10px;
 	  box-sizing: border-box;
           background-image: linear-gradient(-180deg, #004953 0%, #004953 100%);
+	  /*Again, making sure the "3D" look matches throughout the website, 
+	  using the same box shadow effect. */
 	  box-shadow: 0 1rem 1.25rem 0 rgba(22,50,50,0.50),
 							0 -0.25rem 1.5rem rgba(16, 40, 33, 1) inset,
 							0 0.75rem 0.5rem rgba(106, 140, 133, 1) inset,
