@@ -38,7 +38,10 @@ page the user is currently on.
 <br>
   
 
-    
+<!--
+Here, start the form section, make sure to add any of the header text inside this field so it stays with 
+the form as the user adjusts the screen. 
+-->
 <div class="formClass">    
 <h1 class="large-font" style="color:#004953; margin-left: 5%; width: 60%"><b>Contact Us!</b></h1>
 <p style="margin-left: 5%; width: 60%"> We would love to hear from you with questions about locations 
@@ -47,21 +50,27 @@ page the user is currently on.
     
 
 <div class="form_container">
-  <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" 
-  method="POST">
+    <!--
+    Here, we will send a POST request. This will include two text inputs, a drop down input, and a subject input. 
+    -->
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" 
+    method="POST">
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">
 
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
+        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+        <!--
+        Here, for the drop down input, put the first input option as the one the user sees 
+        by default. 
+        -->
         <label for="country">Country</label>
         <select id="country" name="country">
+            <option value="usa">USA</option>
             <option value="australia">Australia</option>
             <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-            <option value="UK">USA</option>
-            <option value="Other">USA</option>
+            <option value="UK">UK</option>
+            <option value="Other">Other</option>
         </select>
 
         <label for="subject">Subject</label>
