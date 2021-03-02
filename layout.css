@@ -42,7 +42,9 @@
 	border-radius: 4px;
 	box-sizing: border-box;
         background-image: linear-gradient(-180deg, #004953 0%, #004953 100%);
-      	/*Here, I researched how to use the various insets to create a "3d button affect"*/
+      	/*Here, I researched how to use the various insets to create a "3d button affect".
+        each row provides the gradient effect on either the top, bottom, or middle parts 
+	of the button.*/
 	box-shadow: 0 1rem 1.25rem 0 rgba(22,50,50,0.50),
 							0 -0.25rem 1.5rem rgba(16, 40, 33, 1) inset,
 							0 0.75rem 0.5rem rgba(106, 140, 133, 1) inset,
@@ -204,7 +206,9 @@
           padding: 64px;
           box-sizing:border-box;
           }
-	/* Here, I */
+	/* Here, I a way to make the display for each 
+	picture/explanation section. I used a table
+	display. */
         .row:after {
           margin: 0;
           font-family: Arial, Helvetica, sans-serif;
@@ -218,7 +222,7 @@
           margin: 0;
           font-family: Arial, Helvetica, sans-serif;
           float: left;
-          width: 66.66666%;
+          width: 66%;
           padding: 20px;
           box-sizing:border-box;
           }
@@ -227,7 +231,7 @@
           margin: 0;
           font-family: Arial, Helvetica, sans-serif;
           float: left;
-          width: 33.33333%;
+          width: 33%;
           padding: 20px;
           box-sizing:border-box;
           }
@@ -315,7 +319,8 @@
 							0 0.75rem 0.5rem rgba(106, 140, 133, 1) inset,
 							0 0.25rem rgba(6, 40, 33, 1) inset;
           }
-
+	/* Here, I needed a way to create a shadow all the way around
+	the pictures. This will match the carousel and the video.*/
        .content_image {
         font-family: Arial, Helvetica, sans-serif;
         display: block;
@@ -326,7 +331,8 @@
         box-sizing:border-box;
         border-radius: 10px;
         }
-
+	/*Here, W3Schools explains how to adjust the 
+	screen for smaller media screens.*/
         @media screen and (max-width: 1000px) {
         .column-66,
         .column-33 {
@@ -366,6 +372,8 @@
         border-radius: 4px;
         cursor: pointer;
         box-sizing: border-box;
+	/*Make sure that the submit button matches the rest of the
+	website buttons. */
         background-image: linear-gradient(-180deg, #004953 0%, #004953 100%);
 	box-shadow: 0 1rem 1.25rem 0 rgba(22,50,50,0.50),
 							0 -0.25rem 1.5rem rgba(16, 40, 33, 1) inset,
@@ -395,52 +403,55 @@
 
 /*-----------------------------STYLE SHEET FOR SCROLL BAR--------------------------------*/
 
+	/* This was a pain to figure out. First, I needed to fix the "total" background, which included
+	the background of the text area and the manual scroll bar.*/
+	.scrollable {
+	padding: 0% 10%;
+	position: relative;
+	border: 2px solid grey;
+	border-radius: 5px;
+	overflow: hidden;
+	height: 400px;
+	background-color: #e3dac9;
+	box-shadow: 0px 0px 18px 3px grey inset
+	}
 
-.scrollable {
-    padding: 0% 10%;
-    position: relative;
-    border: 2px solid grey;
-    border-radius: 5px;
-    overflow: hidden;
-    height: 400px;
-    background-color: #e3dac9;
-    box-shadow: 0px 0px 18px 3px grey inset
-}
+	.scrollable.showScroll::after {
+	position: absolute;
+	content: '';
+	top: 5%;
+	right: 7px;
+	height: 90%;
+	width: 3px;
+	background: rgba(224, 224, 255, .3);
+	}
+	
+	.scrollable .content-wrapper {
+	width: 100%;
+	height: 100%;
+	padding-right: 50%;
+	overflow-y: scroll;
+	}
+	
+	/* Next, I needed to fix the scroll button. In reserching this, 
+	I used "webkit" which disabled the default highlighting of text. */
+	.scroller {
+	z-index: 5;
+	cursor: pointer;
+	position: absolute;
+	width: 10px;
+	border-radius: 5px;
+	background-color: #004953;
+	background-image: linear-gradient(to right, #004953, #a8a787, #183821);
+	top: 0px;
+	right: 3px;
+	-webkit-transition: top .08s;
+	-moz-transition: top .08s;
+	-ms-transition: top .08s;
+	-o-transition: top .08s;
+	transition: top .08s;
+	}
 
-.scrollable.showScroll::after {
-    position: absolute;
-    content: '';
-    top: 5%;
-    right: 7px;
-    height: 90%;
-    width: 3px;
-    background: rgba(224, 224, 255, .3);
-    
-}
-
-.scrollable .content-wrapper {
-    width: 100%;
-    height: 100%;
-    padding-right: 50%;
-    overflow-y: scroll;
-    
-}
-.scroller {
-    z-index: 5;
-    cursor: pointer;
-    position: absolute;
-    width: 10px;
-    border-radius: 5px;
-    background-color: #004953;
-    background-image: linear-gradient(to right, #004953, #a8a787, #183821);
-    top: 0px;
-    right: 3px;
-    -webkit-transition: top .08s;
-    -moz-transition: top .08s;
-    -ms-transition: top .08s;
-    -o-transition: top .08s;
-    transition: top .08s;
-}
-.content {
-    -webkit-user-select: none;
-    }
+	.content {
+	-webkit-user-select: none;
+	}
