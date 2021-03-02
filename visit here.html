@@ -41,7 +41,7 @@ Place the first large header, matching the appearance of the index.html (main) p
     
 <!--
 Add a video center of the page, provide similar CSS to match images. Also, iframe can have the border
-removed by taking away the default thin black border. 
+removed by taking away the default thin black border. The iframe is explained in the W3Schools' website.
 --> 
 <iframe width=66.6% height=500 frameborder= 0 src="https://www.youtube.com/embed/w2DIzeIqX-A?controls=1"></iframe>
 <br>
@@ -53,13 +53,21 @@ removed by taking away the default thin black border.
     
     
 <div style="text-align:center">
-  <h2 class="xlarge-font" style="margin-top: 150px">Destinations</h2>
-  <p style="color:#004953;">Don't forget to check out the 
-  <a href="about page.html"target="_blank">About</a>
-  page for offline hiking trail guides.</p>
+    <h2 class="xlarge-font" style="margin-top: 150px">Destinations</h2>
+    <!-- 
+    Here, create a link to my "about page". 
+    -->
+    <p style="color:#004953;">Don't forget to check out the 
+    <a href="about page.html"target="_blank">About</a>
+    page for offline hiking locaction apps and a trail guide for the Seattle area.</p>
 </div>
 
-    
+<!-- 
+Here, I can use the response display idea from the W3Schools website, creating table displays, where 
+there are two display widths, column-33 and column-66 (I kept the names because it's easy to remember 
+the width amounts that way). Now that I have this format, I can reuse this format each time I add 
+a new location to the list.
+-->    
 
 <!-- Silver Falls, Oregon INFO -->
 <div class="container">
@@ -76,6 +84,9 @@ removed by taking away the default thin black border.
                 is extremely well maintained.  The park itself is 9,000 acres and contains over 
                 24 miles of trails for biking and hiking. The park also offers places to camp
                 as well as cabins for rent.</p>
+        <!-- 
+        Add the url to the button in order to direct the user to the park information webpage.
+        -->
         <a href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=151" target="_blank">
         <button class="button">Visit Here!</button>
         </a>
@@ -83,6 +94,10 @@ removed by taking away the default thin black border.
     <div class="column-33">
         <img src="Silver Falls.jpg" class="content_image" width="335" height="471">
         <br>
+        <!-- 
+        Make sure to put a citation to the original picture. Here, the citation does not have a 
+        website link because the button takes the user to the same place the picture is from.
+        -->
         <p style="font-size:15px;">© 2021 Oregon Parks and Recreation Department</p>
     </div>
 </div>
@@ -98,6 +113,10 @@ removed by taking away the default thin black border.
     <div class="column-33">
         <img src="Lake-Serene-Washington.jpg" class="content_image" alt="App" width="335" height="471">
         <br>
+        <!-- 
+        Here, the citation does have a website link because the button takes the user to 
+        a different location than where the original picture is from.
+        -->
         <a href="https://forterra.org/editorial/hiking-to-lake-serene"target="_blank" 
         style="font-size:15px; color:black;">Photo by Brian Kilpatrick</a>
     </div>
@@ -205,7 +224,7 @@ video that is not mine. Authors/origins are cited throughout the pages as needed
     
 <!--
 Javascript files for the carousel, scroll box, and repeatable text in the body of the pages. 
-Each repeating section in javascript is coded to match it's section. For example, "F1" stands for "Footer" and 
+Each repeating text section in javascript is coded to match it's section. For example, "F1" stands for "Footer" and 
 "1st" text string. This allows for easier changes and finding where text goes to each section. 
 -->
 <p>
