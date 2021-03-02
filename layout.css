@@ -88,9 +88,9 @@
         width: auto;
         margin-top: -22px;
         padding: 16px;
-        color: #222428;
+        color: linear-gradient(to left, #222428, #939599,#222428, #222428, black);
+	color: #222428;
 	border-bottom: black;
-	color: linear-gradient(to left, #222428, #939599,#222428, #222428, black);
         font-weight: bold;
         font-size: 30px;
         transition: .6s ease;
@@ -151,7 +151,7 @@
 
        .active, .dot:hover {
 	 border-right: 1px solid #004953;
-         background-background: linear-gradient(to bottom, #004953, #c3b091, #004953, #004953, black);
+         color-background: linear-gradient(to bottom, #004953, #c3b091, #004953, #004953, black);
          }
 
 	/* This part creates the fading feature on the pictures. This was shown on the W3Schools
@@ -162,7 +162,7 @@
 	  animation-name: fade;
 	  animation-duration: 1.5s;
 	}
-
+	
 	@-webkit-keyframes fade {
 	  from {opacity: .4}
 	  to {opacity: 1}
@@ -203,7 +203,7 @@
           padding: 64px;
           box-sizing:border-box;
           }
-
+	/* Here, I */
         .row:after {
           margin: 0;
           font-family: Arial, Helvetica, sans-serif;
