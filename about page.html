@@ -43,7 +43,12 @@ page the user is currently on.
 <!-- About Section -->
 <div class="container">
 <div class="row">
-        
+        <!-- 
+        Here, the W3Schools webpage "how-to" on building responsive displays was re-used, but realigned 
+        for stacking pictures and text in the two columns. This took a while to get just right. I had to 
+        adjust the margins of all pictures and text that came after the first picture/text in the column
+        in order to get spacing correct.
+        -->
          <div class="column-33">
             <img src="inle.jpg" class="content_image" style="margin-left: 20px;" 
             alt="App" width="213" height="300">
@@ -91,13 +96,23 @@ page the user is currently on.
 
 <!--
 Create the required scrollbar function. 
+Here, per the Piazza comment from the instructor, we had to create a manual scroll bar. This was hard to figure out, 
+but I found pure html/JS version of it here: https://stackoverflow.com/questions/27322881/how-can-i-create-a-simple-
+page-vertical-scroll-bar-without-using-jquery. More explanation of how it works in the JS file provided. 
 -->   
 <div class="container">
+<!--
+I placed the scroll bar body in the responsive display format I already had, so that it will match the column
+above it. 
+-->  
 <div class="row">      
 <div class="column-33">
         <h1 class="large-font" style="margin-left: 30px; color:#004953;">My Preferred Accessories</h1>
 
-
+                <!--
+                First, place the scroll bar, and body around the scroll bar, then the content inside the scroll
+                box. 
+                -->  
                 <div id="main" class="scrollable" style="margin-left: 5%;">
                 <div class="content-wrapper">
                 <div class="content">
@@ -106,6 +121,11 @@ Create the required scrollbar function.
                     incase you drop it. Metal containers also keep cold longer. The water container I like is the Yeti
                         Rambler. It's easily portable and easy to open. <b>Click on the image</b> to find out where to get this Yeti Rambler</p>
                     <br>
+                    <!--
+                    Here, I can place a picture of the item to buy by using the picture web addresses. For each, make sure to use 
+                    place "bold" html sections for "click on the image" so users know that they can click to link them to the 
+                    product.
+                    -->  
                     <a href="https://www.outdoorgearlab.com/reviews/camping-and-hiking/water-bottle/yeti-rambler-26" target="_blank">
                              <img src="https://outdoorgearlab-mvnab3pwrvp3t0.stackpathdns.com/photos/20/12/322760_22806_XXL.jpg" 
                               width="250" height="400" alt="Hiking_Project"></a>
@@ -130,8 +150,18 @@ Create the required scrollbar function.
                 </div>
                 </div>
 </div>
+
+    
+<!--
+Here, I can use the other side of the responsive display table with a longer column containing more links, and also the 
+required "download" feature. 
+-->      
 <div class="column-66" style="position: relative; text-align: center;">  
         <h1 class="large-font" style="margin-bottom: 30px; color:#004953;">Explore Seattle</h1>
+        <!--
+        I could not find a url picture that I liked for this section, so I created a small icon for the Seattle Backcountry.
+        As this section cites the author, the icon and the downloaded material is covered for educational fair use.
+        -->  
         <img src="Seattle Backcountry.jpg" alt="Seattle Backcountry" width="250" height="100%"> 
         <p>If you are interested in hiking around the Seattle area, download The Seattle Backcountry Hiking Guide.The information
         in this guide was compiled by Craig Romano, an award winning author and co-author of more than 20 guidebooks on hiking 
@@ -144,6 +174,10 @@ Create the required scrollbar function.
         cellular service in the middle of nowhere? Here is an app that I recommend for anyone who wants to know exacly 
             where they are at, completely offline. <b>Click on the Hiking Project icon</b> for futher details on downloading
         the app.</p>
+        <!--
+        I could not find a url picture that I liked for this section, so I created a small icon for the Hiking Project.
+        As this section cites the author/website and creates a link to the website, the icon is covered for educational fair use.
+        --> 
         <a href="https://www.hikingproject.com/mobile-app" target="_blank"><img src="Hiking Project Icon.jpg" 
         width="250" height="100%" alt="Hiking_Project"></a>
 </div> 
