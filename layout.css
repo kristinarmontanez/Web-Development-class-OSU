@@ -151,7 +151,8 @@
 
        .active, .dot:hover {
 	 border-right: 1px solid #004953;
-         color-background: linear-gradient(to bottom, #004953, #c3b091, #004953, #004953, black);
+	 background-color: #004953;
+         background-image: linear-gradient(to bottom, #004953, #c3b091, #004953, #004953, black);
          }
 
 	/* This part creates the fading feature on the pictures. This was shown on the W3Schools
