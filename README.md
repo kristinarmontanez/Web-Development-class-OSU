@@ -2,4 +2,6 @@ Below is a website designed for Web Development class at Oregon State University
 
 Please check out https://kristinarmontanez.github.io/final-project/about%20page.html
 
+https://kristinarmontanez.github.io
+
 Thanks!
